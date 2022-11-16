@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Validate pure javascript form with RegEx</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Validate with RegEx</h1>
+    <form>
+      <input type="text" name="username" placeholder="username" />
+      <p>Username must be and contain 5 - 12 characters</p>
+
+      <input type="email" name="email" placeholder="email" />
+      <p>Email must be a valid address, e.g. me@mydomain.com</p>
+
+      <input
+        type="password"
+        name="password"
+        placeholder="password"
+        maxlength="35"
+        class="password"
+      />
+      <p>
+        Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20
+        characters
+      </p>
+      <i class="fas fa-eye fa-2x hide-password"></i>
+      <i class="fas fa-eye-slash fa-2x show-password"></i>
+
+      <input type="text" name="telephone" placeholder="telephone" />
+      <p>Telephone must be a valid telephone number (11 digits)</p>
+
+      <input type="text" name="slug" placeholder="profile slug" />
+      <p>
+        Slug must contain only lowercase letters, numbers and hyphens and be 8 -
+        20 characters
+      </p>
+    </form>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
